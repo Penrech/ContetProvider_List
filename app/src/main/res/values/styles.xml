@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@null</item>
+        <item name="android:windowExitTransition">@null</item>
+        <item name="android:actionMenuTextColor">@color/colorText</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:navigationBarColor">@android:color/darker_gray</item>
+    </style>
+    <style name="AppTheme.NoActionBar.ChangeActivity">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorSemiTransparentBackground</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--<item name="android:windowBackground">@color/colorSemiTransparentBackground</item>-->
+       <!-- <item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="customEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="colorControlNormal">@color/colorText</item>
+        <item name="colorControlActivated">@color/colorText</item>
+        <item name="colorControlHighlight">@color/colorText</item>
+    </style>
+    <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorRipple</item>
+    </style>
+    <style name="customTextLayout" parent="TextAppearance.AppCompat">
+        <item name="android:colorAccent">@color/colorRipple</item>
+        <item name="colorControlNormal">@color/colorRipple</item>
+        <item name="colorControlActivated">@color/colorRipple</item>
+    </style>
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/accelerate_decelerate_interpolator</item>
+        <item name="android:windowExitAnimation">@android:anim/decelerate_interpolator</item>
+    </style>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:visibility="visible"
+        android:id="@+id/rootFormProduct">
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textInputLayout2"
+            android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
+            app:hintTextAppearance="@style/customTextLayout"
+            android:textColorHint="@color/colorRipple"
+            app:counterEnabled="false">
+
+        <com.pauenrech.ejerciciocontentprovider.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:maxLength="20"
+                style="@style/customEditText"
+                android:theme="@style/customEditText"
+                android:id="@+id/inputNombre"
+                android:layout_weight="1"
+                android:hint="Producto"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout2"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textInputLayout3"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+            app:hintTextAppearance="@style/customTextLayout"
+            android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:textColorHint="@color/colorRipple">
+
+        <com.pauenrech.ejerciciocontentprovider.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                style="@style/customEditText"
+                android:theme="@style/customEditText"
+                android:id="@+id/inputCantidad"
+                android:layout_weight="1"
+                android:hint="Cantidad"
+                android:imeOptions="actionDone"
+                android:singleLine="true" android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+</android.support.constraint.ConstraintLayout>

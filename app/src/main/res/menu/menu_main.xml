@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.pauenrech.ejerciciocontentprovider.MainActivity">
+
+    <item android:id="@+id/action_order"
+          android:title="Ordenar"
+          android:icon="@drawable/ic_round_text_rotate_up_36"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_selected"
+          android:title="Seleccionados"
+          app:actionLayout="@layout/selected_counter"
+          android:orderInCategory="110"
+          android:enabled="false"
+          app:showAsAction="always"
+          android:visible="false"/>
+    <item android:id="@+id/action_delete"
+          android:title="Borrar"
+          android:icon="@drawable/ic_round_delete_forever_24px"
+          android:orderInCategory="115"
+          app:showAsAction="always"
+          android:visible="false"/>
+</menu>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:id="@+id/root"
+        android:clipChildren="false" android:background="@color/colorBackground">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/background_light"
+            android:theme="@style/MyAppBarLayoutTheme">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/background_light"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true">
+
+                <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnCerrarSeleccion"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_round_arrow_back_24px"
+                        android:tint="@color/colorText"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:visibility="gone"
+                        android:scaleType="centerCrop"
+                        android:paddingEnd="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"/>
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        style="@style/customEditText"
+                        android:theme="@style/customEditText"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/searchBox"
+                        android:singleLine="true"
+                        android:hint="Buscar"
+                        android:background="@null"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        android:textColor="@color/colorText"
+                        app:layout_constraintStart_toEndOf="@+id/btnCerrar"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnCerrar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_round_clear"
+                        android:tint="@color/colorText"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:visibility="gone"
+                        android:scaleType="centerCrop"
+                        android:paddingEnd="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/searchBox"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"/>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rootFloating"
+            app:layout_behavior="com.pauenrech.ejerciciocontentprovider.ShrinkBehavior"
+            android:layout_gravity="bottom"
+            android:transformPivotX="56dp">
+
+        <android.support.v7.widget.CardView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp"
+                android:id="@+id/floatingCard"
+                app:cardBackgroundColor="@android:color/darker_gray">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <include layout="@layout/add_product_form"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         android:id="@+id/includeNewProductForm"
+                         android:visibility="gone"
+                         app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                         android:layout_marginEnd="16dp"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="16dp"/>
+                <ImageButton
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        app:srcCompat="@drawable/ic_round_add_36"
+                        android:id="@+id/imageButton"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        android:tint="@android:color/background_light"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

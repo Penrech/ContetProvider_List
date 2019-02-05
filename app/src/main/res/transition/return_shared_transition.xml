@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:transitionOrdering="sequential">
+    <changeTransform
+            android:interpolator="@android:interpolator/decelerate_quad"
+            android:duration="@android:integer/config_shortAnimTime">
+    </changeTransform>
+
+    <changeBounds
+            android:interpolator="@android:interpolator/decelerate_quad"
+            android:duration="@android:integer/config_shortAnimTime">
+    </changeBounds>
+
+    <recolor
+            android:interpolator="@android:interpolator/decelerate_quad"
+            android:duration="@android:integer/config_shortAnimTime">
+    </recolor>
+
+    <fade
+            android:interpolator="@android:interpolator/decelerate_quad"
+            android:duration="@android:integer/config_shortAnimTime">
+    </fade>
+
+</transitionSet>
