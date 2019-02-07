@@ -16,30 +16,37 @@
 
 <h1>Screenshots</h1>
 <p align = "center">
-  <a href='#img1'><img id='img1' width = '32%' src='device-2019-02-05-180713.png'/></a>
-  <a href='#img2'><img id='img2' width = '32%' src='device-2019-02-05-180736.png'/></a>
-  <a href='#img3'><img id='img3' width = '32%' src='device-2019-02-05-180804.png'/></a>
+  <a href='#img1'><img id='img1' width = '32%' src='device-2019-02-05-183935.png'/></a>
+  <a href='#img2'><img id='img2' width = '32%' src='device-2019-02-05-184011.png'/></a>
+  <a href='#img3'><img id='img3' width = '32%' src='device-2019-02-05-184045.png'/></a>
 </p>
 <p align = "center">
-  <a href='#img4'><img id='img4' width = '32%' src='device-2019-02-05-180831.png'/></a>
-  <a href='#img5'><img id='img5' width = '32%' src='device-2019-02-05-180920.png'/></a>
-  <a href='#img6'><img id='img6' width = '32%' src='device-2019-02-05-183440.png'/></a>
+  <a href='#img4'><img id='img4' width = '32%' src='device-2019-02-05-184106.png'/></a>
+  <a href='#img5'><img id='img5' width = '32%' src='device-2019-02-05-184125.png'/></a>
 </p>
 
 <h1>Demo *</h1>
 <p style>*A higher quality video opens on YouTube when clicked</p>
 
 <p align="center">
-  <a href='https://www.youtube.com/watch?v=IwiZtOHvoiU'><img width = '49%' src='JuegoNavidad1.gif'/></a>
-  <a href='#imgE1'><img id='imgE1' width = '49%' src='SharedPreferencesGame_1.png'/></a>
+  <a href='https://www.youtube.com/watch?v=Ttep1O52Tnc'><img width = '49%' src='ContentProvider1.gif'/></a>
+  <a href='#imgE1'><img id='imgE1' width = '49%' src='CP_1-10.png'/></a>
 </p>
 <br>
 <p align="center">
-  <a href='#imgE2'><img id='imgE2' width = '49%' src='SharedPreferencesGame_2.png'/></a>
-  <a href='https://www.youtube.com/watch?v=2uMa0kjMZcw'><img width = '49%' src='JuegoNavidad2.gif'/></a>
+  <a href='#imgE2'><img id='imgE2' width = '49%' src='CP_2-11.png'/></a>
+  <a href='https://www.youtube.com/watch?v=o-x9R2TmzwE'><img width = '49%' src='ContentProvider2.gif'/></a>
 </p>
 <br>
 <p align="center">
-  <a href='https://www.youtube.com/watch?v=vwvHZa4tVXk'><img width = '49%' src='JuegoNavidad3.gif'/></a>
-   <a href='#imgE3'><img id='imgE3' width = '49%' src='SharedPreferencesGame_3.png'/></a>
+  <a href='https://www.youtube.com/watch?v=PYl7H_IjebA'><img width = '49%' src='ContentProvider3.gif'/></a>
+   <a href='#imgE3'><img id='imgE3' width = '49%' src='CP_3-12.png'/></a>
+</p>
+<p align="center">
+  <a href='#imgE4'><img id='imgE4' width = '49%' src='CP_4.png'/></a>
+  <a href='https://www.youtube.com/watch?v=DUu83fa6e2o'><img width = '49%' src='ContentProvider4.gif'/></a>
+</p>
+<p align="center">
+  <a href='https://www.youtube.com/watch?v=6kUGNW0mbhg'><img width = '49%' src='ContentProvider5.gif'/></a>
+   <a href='#imgE5'><img id='imgE5' width = '49%' src='CP_5.png'/></a>
 </p>
