@@ -13,6 +13,7 @@
 <p>The app with the database is not included inside this repository, but the implementation is similar to the one that an app needs to use the smartphone contacts through a content provider</p>
 <p>As is a really simple app, I've decided to add animations and fluid transitions to it. The Icons animations were achieved by creating animations with Adobe AE and exporting it to Android Studio with the Lottie SDK</p>
 <p>Academic demo app, this app is not completely debugged, it's just a demo. It could contain not extracted text strings and not properly indented code</p>
+<p> * The content provider from the external app has been added to this repo in order to facilitate the testing of the current app </p>
 
 <h1>Screenshots</h1>
 <p align = "center">
