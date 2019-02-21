@@ -445,6 +445,7 @@ class MainActivity : AppCompatActivity(),
             it.playAnimation()
         }
 
+        showCloseButton(false)
         salirModoSeleccion()
 
     }
