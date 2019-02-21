@@ -32,6 +32,7 @@ import com.airbnb.lottie.model.KeyPath
 import kotlin.math.roundToInt
 import com.airbnb.lottie.value.LottieValueCallback
 import com.airbnb.lottie.LottieProperty
+import com.pauenrech.ejerciciocontentprovider.provider.MyContentProvider
 import kotlinx.android.synthetic.main.add_product_form.*
 import kotlinx.android.synthetic.main.product_card.view.*
 import kotlinx.android.synthetic.main.selected_counter.view.*
@@ -128,7 +129,8 @@ class MainActivity : AppCompatActivity(),
 
     //Me aseguro que lo primero que se haga es configurar el contentProvider
     fun configurarContentProvider(){
-        uri = Uri.parse("content://com.cice.formador.androidstorage.MyContentProvider/products")
+        //uri = Uri.parse("content://com.cice.formador.androidstorage.MyContentProvider/products")
+        uri = MyContentProvider.CONTENT_URI
         contentProviderClient = contentResolver.acquireContentProviderClient(uri)
 
         getList()

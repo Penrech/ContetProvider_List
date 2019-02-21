@@ -32,6 +32,12 @@
                 android:name=".ChangeDataActivity"
                 android:theme="@style/AppTheme.NoActionBar.ChangeActivity">
         </activity>
+        <provider
+                android:name=".provider.MyContentProvider"
+                android:authorities="com.pauenrech.ejerciciocontentprovider.MyContentProvider"
+                android:enabled="true"
+                android:exported="true">
+        </provider>
     </application>
 
 </manifest>
