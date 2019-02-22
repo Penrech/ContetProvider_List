@@ -26,7 +26,13 @@
   <a href='#img5'><img id='img5' width = '32%' src='device-2019-02-05-184125.png'/></a>
 </p>
 
-<h1>Demo *</h1>
+<h1>Demo in Google Play</h1>
+<p>
+  <a href='https://play.google.com/store/apps/details?id=com.pauenrech.ejerciciocontentprovider'><img id='imgDetalles' src='detalle-04.png'/></a>
+</p>
+<a href='https://play.google.com/store/apps/details?id=com.pauenrech.ejerciciocontentprovider&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= '33%' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
+<h1>Video Demo *</h1>
 <p style>*A higher quality and longer video opens on YouTube when clicked</p>
 
 <p align="center">
